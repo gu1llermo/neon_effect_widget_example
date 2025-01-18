@@ -6,7 +6,7 @@ class NeonExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final amarillo = Colors.yellow;
+    final verde = Colors.green;
     final azul = Colors.blue;
     final rojo = Colors.red;
     final backgroundColor = Colors.black;
@@ -18,10 +18,19 @@ class NeonExample extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             NeonEffect(
-              neonColor: amarillo,
+              neonColor: rojo,
               child: _CustomWidget(
-                color: amarillo,
-                title: "AMARILLO",
+                color: rojo,
+                title: "ROJO",
+                backgroundColor: backgroundColor,
+              ),
+            ),
+            const SizedBox(height: 30),
+            NeonEffect(
+              neonColor: verde,
+              child: _CustomWidget(
+                color: verde,
+                title: "VERDE",
                 backgroundColor: backgroundColor,
               ),
             ),
@@ -31,15 +40,6 @@ class NeonExample extends StatelessWidget {
               child: _CustomWidget(
                 color: azul,
                 title: "AZUL",
-                backgroundColor: backgroundColor,
-              ),
-            ),
-            const SizedBox(height: 30),
-            NeonEffect(
-              neonColor: rojo,
-              child: _CustomWidget(
-                color: rojo,
-                title: "ROJO",
                 backgroundColor: backgroundColor,
               ),
             ),
